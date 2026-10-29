@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // Is content ke andar apna rasta lazmi check karein
   content: [
-    "./src/app/**/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}"
+    "./app/**/*.{js,jsx,ts,tsx}",         // Main app folder ke liye
+    "./src/**/*.{js,jsx,ts,tsx}",         // Aap ke naye src folder ke liye
+    "./components/**/*.{js,jsx,ts,tsx}"   // Agar main root par components hain
   ],
   presets: [require("nativewind/preset")],
   theme: {
